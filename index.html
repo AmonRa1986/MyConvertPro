@@ -151,14 +151,6 @@
             transition: all 0.3s ease;
         }
 
-        .story-card.active {
-            display: block;
-        }
-
-        .story-card:not(.active) {
-            display: none;
-        }
-
         .story-badge {
             position: absolute;
             top: 20px;
@@ -169,21 +161,8 @@
             border: 3px solid rgba(255, 255, 255, 0.3);
         }
 
-        .critical-story .story-badge {
-            background: linear-gradient(135deg, var(--danger-red), #c82333);
-        }
-
-        .needs-work-story .story-badge {
-            background: linear-gradient(135deg, var(--warning-yellow), #e0a800);
-            color: var(--dark-gray);
-        }
-
         .good-foundation-story .story-badge {
             background: linear-gradient(135deg, var(--success-green), #20c997);
-        }
-
-        .funnel-master-story .story-badge {
-            background: linear-gradient(135deg, var(--convertpro-purple), var(--convertpro-purple-dark));
         }
 
         .story-header-content {
@@ -205,20 +184,8 @@
             color: var(--bright-white);
         }
 
-        .critical-story .story-icon {
-            background: linear-gradient(135deg, var(--danger-red), #c82333);
-        }
-
-        .needs-work-story .story-icon {
-            background: linear-gradient(135deg, var(--warning-yellow), #e0a800);
-        }
-
         .good-foundation-story .story-icon {
             background: linear-gradient(135deg, var(--success-green), #20c997);
-        }
-
-        .funnel-master-story .story-icon {
-            background: linear-gradient(135deg, var(--convertpro-purple), var(--convertpro-purple-dark));
         }
 
         .story-title {
@@ -246,18 +213,6 @@
             border-radius: 10px;
             margin: 25px 0;
             font-weight: 600;
-        }
-
-        .story-highlight.critical {
-            background: #f8d7da;
-            border: 1px solid #f5c6cb;
-            color: #721c24;
-        }
-
-        .story-highlight.warning {
-            background: #fff3cd;
-            border: 1px solid #ffeaa7;
-            color: #856404;
         }
 
         .story-highlight.success {
@@ -290,83 +245,14 @@
             display: inline-block;
         }
 
-        .critical-story .story-button {
-            background: linear-gradient(135deg, var(--danger-red), #c82333);
-            box-shadow: 0 4px 15px rgba(220, 53, 69, 0.3);
-        }
-
-        .needs-work-story .story-button {
-            background: linear-gradient(135deg, var(--warning-yellow), #e0a800);
-            box-shadow: 0 4px 15px rgba(255, 193, 7, 0.3);
-            color: var(--dark-gray);
-        }
-
         .good-foundation-story .story-button {
             background: linear-gradient(135deg, var(--success-green), #20c997);
             box-shadow: 0 4px 15px rgba(40, 167, 69, 0.3);
         }
 
-        .funnel-master-story .story-button {
-            background: linear-gradient(135deg, var(--convertpro-purple), var(--convertpro-purple-dark));
-            box-shadow: 0 4px 15px rgba(102, 126, 234, 0.3);
-        }
-
         .story-button:hover {
             transform: translateY(-2px);
             box-shadow: 0 6px 20px rgba(0, 0, 0, 0.2);
-        }
-
-        /* Story Navigation */
-        .story-navigation {
-            text-align: center;
-            margin-top: 40px;
-        }
-
-        .story-nav-container {
-            display: inline-flex;
-            gap: 10px;
-            background: var(--bright-white);
-            padding: 15px;
-            border-radius: 50px;
-            box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
-        }
-
-        .story-nav-btn {
-            width: 12px;
-            height: 12px;
-            border-radius: 50%;
-            border: none;
-            cursor: pointer;
-            transition: all 0.3s ease;
-            opacity: 0.5;
-        }
-
-        .story-nav-btn.active {
-            width: 15px;
-            height: 15px;
-            opacity: 1;
-        }
-
-        .story-nav-btn[data-story="critical"] {
-            background: var(--danger-red);
-        }
-
-        .story-nav-btn[data-story="needs-work"] {
-            background: var(--warning-yellow);
-        }
-
-        .story-nav-btn[data-story="good-foundation"] {
-            background: var(--success-green);
-        }
-
-        .story-nav-btn[data-story="funnel-master"] {
-            background: var(--convertpro-purple);
-        }
-
-        .story-nav-info {
-            margin: 15px 0 0 0;
-            color: #6c757d;
-            font-size: 0.9rem;
         }
 
         /* Final CTA */
@@ -687,21 +573,6 @@
                 padding: 25px 20px;
             }
 
-            .story-nav-container {
-                padding: 12px;
-                gap: 8px;
-            }
-
-            .story-nav-btn {
-                width: 10px;
-                height: 10px;
-            }
-
-            .story-nav-btn.active {
-                width: 12px;
-                height: 12px;
-            }
-
             .guarantee-section {
                 padding: 40px 0;
             }
@@ -775,106 +646,11 @@
                 <h2>
                     <span class="emoji">🎭</span>Why We're OBSESSED With Fixing Funnels
                 </h2>
-                <p>These TRUE stories will show you exactly why every minute you wait costs you money...</p>
+                <p>This TRUE story will show you exactly why every minute you wait costs you money...</p>
             </div>
 
             <div class="story-container">
-                <!-- Story Card 1: Critical - Russell Brunson Style -->
-                <div class="story-card critical-story active">
-                    <div class="story-badge"></div>
-                    
-                    <div class="story-header-content">
-                        <div class="story-icon">💸</div>
-                        <div>
-                            <h3 class="story-title">The $47,000 Mistake That Changed Everything</h3>
-                            <p class="story-subtitle">Russell Brunson Style • Based on a TRUE story</p>
-                        </div>
-                    </div>
-                    
-                    <div class="story-content">
-                        <p>Picture this: A brilliant entrepreneur with a $2.3 million business...</p>
-                        
-                        <p>He had the PERFECT product. Customers LOVED it. But his funnel? It was bleeding money faster than a punctured fire hose.</p>
-                        
-                        <div class="story-highlight critical">
-                            <strong>THE BRUTAL TRUTH:</strong> His "sophisticated" 47-step funnel was converting at 0.8%. That's 992 people out of every 1,000 saying "NO THANKS" and walking away forever.
-                        </div>
-                        
-                        <p>Every month, he was spending $47,000 on ads...</p>
-                        <p>Every month, he was making $12,000 in sales...</p>
-                        <p>Every month, he was losing $35,000.</p>
-                        
-                        <p><strong>The wake-up call?</strong> His wife found him at 3 AM, staring at his laptop screen, tears streaming down his face as he watched another $500 disappear into the Facebook ad void.</p>
-                        
-                        <div class="story-highlight success">
-                            <strong>🎯 THE SIMPLE SOLUTION:</strong><br>
-                            Step 1: "Want to solve your problem?"<br>
-                            Step 2: "Here's how."<br>
-                            Step 3: "Buy it here."<br><br>
-                            New Conversion Rate: 12.4%<br>
-                            Monthly Profit: $127,000
-                        </div>
-                        
-                        <p><strong>The lesson?</strong> Sometimes the smartest thing you can do is make it stupid simple.</p>
-                    </div>
-                    
-                    <div class="story-cta">
-                        <button onclick="scrollToBooking()" class="story-button">
-                            🚀 Don't Let This Be YOUR Story - Book Now!
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Story Card 2: Needs Work - Key & Peele Style -->
-                <div class="story-card needs-work-story">
-                    <div class="story-badge"></div>
-                    
-                    <div class="story-header-content">
-                        <div class="story-icon">🤦‍♂️</div>
-                        <div>
-                            <h3 class="story-title">The Button That Broke the Internet (Well, Almost)</h3>
-                            <p class="story-subtitle">Key & Peele Style • You Can't Make This Up</p>
-                        </div>
-                    </div>
-                    
-                    <div class="story-content">
-                        <p>So there's this guy, let's call him Kevin...</p>
-                        
-                        <p>Kevin spent 6 months building the "perfect" funnel. I'm talking PERFECT. Beautiful design, compelling copy, seamless user experience...</p>
-                        
-                        <p>Launch day comes. Kevin's refreshing his analytics every 30 seconds like it's Christmas morning.</p>
-                        
-                        <div class="story-highlight warning">
-                            <strong>PLOT TWIST:</strong> 10,000 visitors. ZERO sales. Not one. Nada. Zilch.
-                        </div>
-                        
-                        <p>Kevin's having a full-blown panic attack. His business partner is stress-eating donuts. Their developer is hiding under his desk.</p>
-                        
-                        <p>Then Kevin's 12-year-old nephew visits the office...</p>
-                        
-                        <p>"Uncle Kevin, why doesn't your 'Buy Now' button work?"</p>
-                        
-                        <p>"What do you mean it doesn't work?"</p>
-                        
-                        <p>"I clicked it 20 times. Nothing happened."</p>
-                        
-                        <div class="story-highlight critical">
-                            <strong>THE REVELATION:</strong> The buy button wasn't connected to anything. Six months of work. $50,000 in development. Defeated by a missing line of code.
-                        </div>
-                        
-                        <p>Kevin fixed it in 5 minutes. Made $30,000 in sales that same day.</p>
-                        
-                        <p><strong>Moral of the story?</strong> Sometimes the smallest details make the biggest difference. And always, ALWAYS test your buttons.</p>
-                    </div>
-                    
-                    <div class="story-cta">
-                        <button onclick="scrollToBooking()" class="story-button">
-                            🔧 Let's Fix YOUR Funnel - Book Now!
-                        </button>
-                    </div>
-                </div>
-
-                <!-- Story Card 3: Good Foundation - Gary Vaynerchuk Style -->
+                <!-- Story Card: Good Foundation - Gary Vaynerchuk Style -->
                 <div class="story-card good-foundation-story">
                     <div class="story-badge"></div>
                     
@@ -922,71 +698,6 @@
                             💪 LET'S OPTIMIZE YOUR FUNNEL - BOOK NOW!
                         </button>
                     </div>
-                </div>
-
-                <!-- Story Card 4: Funnel Master - Dave Chappelle Style -->
-                <div class="story-card funnel-master-story">
-                    <div class="story-badge"></div>
-                    
-                    <div class="story-header-content">
-                        <div class="story-icon">🎯</div>
-                        <div>
-                            <h3 class="story-title">The Funnel That Thought It Was Fancy</h3>
-                            <p class="story-subtitle">Dave Chappelle Style • Observational Truth</p>
-                        </div>
-                    </div>
-                    
-                    <div class="story-content">
-                        <p>You know what's crazy about funnels?</p>
-                        
-                        <p>Everybody wants to make them complicated. Like, REALLY complicated.</p>
-                        
-                        <p>I met this dude at a conference. He's telling me about his "revolutionary" funnel system...</p>
-                        
-                        <div class="story-highlight warning">
-                            <strong>His "Simple" Funnel Process:</strong><br><br>
-                            📹 47-minute video about his childhood trauma<br>
-                            📝 23-question quiz about relationship with numbers<br>
-                            📧 14 emails over 3 weeks about spiritual data analysis<br>
-                            💰 Finally... maybe they can buy his $47 Excel course
-                        </div>
-                        
-                        <p>I'm like, "Bro... you're selling Excel tutorials, not therapy!"</p>
-                        
-                        <p>His conversion rate? 0.3%. That's 3 people out of 1,000 who made it through his emotional journey just to learn VLOOKUP.</p>
-                        
-                        <p>Meanwhile, his competitor has a simple funnel:</p>
-                        
-                        <div class="story-highlight success">
-                            <strong>🎯 THE SIMPLE SOLUTION:</strong><br><br>
-                            Step 1: "Want to learn Excel?"<br>
-                            Step 2: "Here's how."<br>
-                            Step 3: "Buy it here."<br><br>
-                            New Conversion Rate: 8.4%
-                        </div>
-                        
-                        <p>Sometimes the best funnel is the one that gets out of its own way.</p>
-                        
-                        <p>Your customers don't need a spiritual awakening. They need a solution.</p>
-                        
-                        <p><strong>Keep it simple. Keep it focused. Keep it profitable.</strong></p>
-                    </div>
-                    
-                    <div class="story-cta">
-                        <button onclick="scrollToBooking()" class="story-button">
-                            🎯 Keep It Simple - Book Your Session!
-                        </button>
-                    </div>
-                </div>
-            </div>
-
-            <!-- Story Navigation -->
-            <div class="story-navigation">
-                <div class="story-nav-container">
-                    <button onclick="showStory('critical')" class="story-nav-btn active" data-story="critical"></button>
-                    <button onclick="showStory('needs-work')" class="story-nav-btn" data-story="needs-work"></button>
-                    <button onclick="showStory('good-foundation')" class="story-nav-btn" data-story="good-foundation"></button>
-                    <button onclick="showStory('funnel-master')" class="story-nav-btn" data-story="funnel-master"></button>
                 </div>
             </div>
 
@@ -1151,65 +862,11 @@
     </section>
 
     <script>
-        // Story rotation functionality
-        let currentStory = 0;
-        const stories = ['critical', 'needs-work', 'good-foundation', 'funnel-master'];
-        let autoRotateInterval;
-
-        // Randomize starting story
-        function getRandomStory() {
-            return Math.floor(Math.random() * stories.length);
-        }
-
-        // Initialize with random story
-        function initializeStories() {
-            currentStory = getRandomStory();
-            showStory(stories[currentStory]);
-        }
-
-        function showStory(storyType) {
-            // Hide all stories
-            document.querySelectorAll('.story-card').forEach(card => {
-                card.classList.remove('active');
-            });
-            
-            // Show selected story
-            document.querySelector(`.${storyType}-story`).classList.add('active');
-            
-            // Update navigation
-            document.querySelectorAll('.story-nav-btn').forEach(btn => {
-                btn.classList.remove('active');
-            });
-            document.querySelector(`[data-story="${storyType}"]`).classList.add('active');
-            
-            // Update current story index
-            currentStory = stories.indexOf(storyType);
-            
-            // Reset auto-rotation
-            resetAutoRotation();
-        }
-
-        function nextStory() {
-            currentStory = (currentStory + 1) % stories.length;
-            showStory(stories[currentStory]);
-        }
-
-        function resetAutoRotation() {
-            clearInterval(autoRotateInterval);
-            autoRotateInterval = setInterval(nextStory, 3600000); // 1 hour = 3600000ms
-        }
-
         function scrollToBooking() {
             document.getElementById('booking').scrollIntoView({ 
                 behavior: 'smooth' 
             });
         }
-
-        // Initialize on page load
-        document.addEventListener('DOMContentLoaded', function() {
-            initializeStories();
-            resetAutoRotation();
-        });
     </script>
 </body>
 </html>
