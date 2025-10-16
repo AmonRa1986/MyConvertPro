@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Discover The ConvertPro AI Method - Free Strategy Session</title>
+    <meta http-equiv="Content-Security-Policy" content="frame-src 'self' https://calendar.google.com https://calendar.app.google;">
+    <title>Book Your FREE Funnel Strategy Session - ConvertPro</title>
     <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     <style>
         :root {
@@ -11,8 +12,6 @@
             --convertpro-purple-dark: #764ba2;
             --convertpro-orange: #f093fb;
             --convertpro-orange-bright: #f5576c;
-            --method-blue: #3a86ff;
-            --method-blue-dark: #2563eb;
             --dark-gray: #2d3748;
             --light-gray: #f7fafc;
             --success-green: #48bb78;
@@ -57,7 +56,7 @@
         .header-content {
             position: relative;
             z-index: 1;
-            max-width: 900px;
+            max-width: 800px;
             margin: 0 auto;
         }
 
@@ -68,26 +67,12 @@
             color: var(--convertpro-orange);
         }
 
-        .method-badge {
-            display: inline-block;
-            background: linear-gradient(135deg, var(--method-blue), var(--method-blue-dark));
-            color: white;
-            padding: 8px 20px;
-            border-radius: 25px;
-            font-size: 0.9rem;
-            font-weight: 600;
-            margin-bottom: 20px;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-        }
-
         .header h1 {
             font-family: 'Montserrat', sans-serif;
-            font-size: 3.2rem;
+            font-size: 3rem;
             font-weight: 800;
             margin-bottom: 20px;
             text-shadow: 2px 2px 4px rgba(0,0,0,0.3);
-            line-height: 1.1;
         }
 
         .header h1 .highlight {
@@ -95,33 +80,15 @@
         }
 
         .header .subtitle {
-            font-size: 1.4rem;
-            font-weight: 400;
+            font-size: 1.3rem;
+            font-weight: 300;
             opacity: 0.95;
-            margin-bottom: 30px;
         }
 
-        .trust-indicators {
-            display: flex;
-            justify-content: center;
-            gap: 30px;
-            flex-wrap: wrap;
-            margin-top: 30px;
-            opacity: 0.9;
-        }
-
-        .trust-indicator {
-            font-size: 0.9rem;
-            display: flex;
-            align-items: center;
-            gap: 8px;
-        }
-
-        /* Problem Agitation Section */
-        .problem-section {
+        /* Story Section */
+        .story-section {
             padding: 80px 20px;
-            background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
-            color: white;
+            background-color: #f8fafc;
         }
 
         .container {
@@ -129,401 +96,136 @@
             margin: 0 auto;
         }
 
-        .problem-header {
+        .story-header {
             text-align: center;
             margin-bottom: 60px;
         }
 
-        .problem-header h2 {
+        .story-header h2 {
             font-family: 'Montserrat', sans-serif;
-            font-size: 2.8rem;
+            font-size: 2.5rem;
             font-weight: 700;
-            margin-bottom: 20px;
-            color: #ff6b6b;
+            color: var(--dark-gray);
+            margin-bottom: 15px;
         }
 
-        .problem-header p {
-            font-size: 1.3rem;
-            opacity: 0.9;
-            max-width: 700px;
-            margin: 0 auto;
-        }
-
-        .problem-stats {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-            gap: 30px;
-            margin-bottom: 50px;
-        }
-
-        .problem-stat {
-            text-align: center;
-            padding: 30px 20px;
-            background: rgba(255, 255, 255, 0.05);
-            border-radius: 15px;
-            border: 1px solid rgba(255, 255, 255, 0.1);
-        }
-
-        .problem-stat-number {
-            font-family: 'Montserrat', sans-serif;
+        .story-header .emoji {
             font-size: 3rem;
-            font-weight: 800;
-            color: #ff6b6b;
-            margin-bottom: 10px;
+            margin-right: 15px;
         }
 
-        .problem-stat-text {
-            font-size: 1.1rem;
-            opacity: 0.9;
-        }
-
-        .reality-check {
-            background: rgba(255, 107, 107, 0.1);
-            border-left: 5px solid #ff6b6b;
-            padding: 30px;
-            border-radius: 10px;
-            margin: 40px 0;
-            text-align: center;
-        }
-
-        .reality-check h3 {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 1.8rem;
-            font-weight: 700;
-            margin-bottom: 15px;
-            color: #ff6b6b;
-        }
-
-        /* Method Solution Section */
-        .solution-section {
-            padding: 80px 20px;
-            background: white;
-        }
-
-        .solution-header {
-            text-align: center;
-            margin-bottom: 60px;
-        }
-
-        .solution-header h2 {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 2.8rem;
-            font-weight: 700;
-            color: var(--dark-gray);
-            margin-bottom: 20px;
-        }
-
-        .solution-header .method-highlight {
-            color: var(--method-blue);
-        }
-
-        .solution-header p {
-            font-size: 1.3rem;
+        .story-header p {
+            font-size: 1.2rem;
             color: #666;
-            max-width: 800px;
+            max-width: 600px;
             margin: 0 auto;
         }
 
-        .method-capabilities {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-            gap: 40px;
-            margin-bottom: 60px;
-        }
-
-        .method-capability {
-            background: linear-gradient(135deg, #f8faff, #e6f3ff);
-            padding: 40px 30px;
-            border-radius: 20px;
-            text-align: center;
-            border: 1px solid rgba(58, 134, 255, 0.1);
-            transition: transform 0.3s ease;
-        }
-
-        .method-capability:hover {
-            transform: translateY(-5px);
-        }
-
-        .method-capability-icon {
-            width: 80px;
-            height: 80px;
-            background: linear-gradient(135deg, var(--method-blue), var(--method-blue-dark));
-            border-radius: 50%;
-            display: flex;
-            align-items: center;
-            justify-content: center;
-            margin: 0 auto 20px;
-            font-size: 2rem;
-            color: white;
-        }
-
-        .method-capability h3 {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 1.5rem;
-            font-weight: 600;
-            margin-bottom: 15px;
-            color: var(--dark-gray);
-        }
-
-        .method-capability p {
-            color: #666;
-            line-height: 1.6;
-        }
-
-        .method-results {
-            background: linear-gradient(135deg, var(--method-blue), var(--method-blue-dark));
-            color: white;
-            padding: 50px 40px;
-            border-radius: 20px;
-            text-align: center;
-            margin: 60px 0;
-        }
-
-        .method-results h3 {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 2.2rem;
-            font-weight: 700;
-            margin-bottom: 30px;
-        }
-
-        .method-results-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
-            gap: 30px;
-        }
-
-        .method-result-item {
-            text-align: center;
-        }
-
-        .method-result-number {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 2.5rem;
-            font-weight: 800;
-            margin-bottom: 10px;
-            color: var(--convertpro-orange);
-        }
-
-        .method-result-text {
-            font-size: 1.1rem;
-            opacity: 0.9;
-        }
-
-        /* Method Tiers Section */
-        .method-tiers-section {
-            padding: 80px 20px;
-            background: var(--light-gray);
-        }
-
-        .method-tiers-header {
-            text-align: center;
-            margin-bottom: 60px;
-        }
-
-        .method-tiers-header h2 {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 2.5rem;
-            font-weight: 700;
-            color: var(--dark-gray);
-            margin-bottom: 20px;
-        }
-
-        .method-tiers-header .tagline {
-            font-size: 1.3rem;
-            color: var(--method-blue);
-            font-weight: 600;
-            margin-bottom: 15px;
-        }
-
-        .method-tiers-grid {
-            display: grid;
-            grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
-            gap: 30px;
-            margin-bottom: 50px;
-        }
-
-        .method-tier-card {
+        /* Story Card */
+        .story-card {
             background: white;
             border-radius: 20px;
-            padding: 40px 30px;
-            text-align: center;
-            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
-            transition: transform 0.3s ease;
+            padding: 40px;
+            box-shadow: 0 20px 40px rgba(0,0,0,0.1);
+            margin-bottom: 40px;
             position: relative;
             overflow: hidden;
         }
 
-        .method-tier-card.discovery {
-            border-top: 5px solid var(--method-blue);
+        .story-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 5px;
+            background: linear-gradient(90deg, var(--success-green), #68d391);
         }
 
-        .method-tier-card.implementation {
-            border-top: 5px solid var(--convertpro-orange-bright);
-            transform: scale(1.05);
-        }
-
-        .method-tier-card.implementation::before {
-            content: 'MOST POPULAR';
+        .story-badge {
             position: absolute;
             top: 20px;
-            right: -30px;
-            background: var(--convertpro-orange-bright);
-            color: white;
-            padding: 5px 40px;
-            font-size: 0.8rem;
-            font-weight: 600;
-            transform: rotate(45deg);
-        }
-
-        .method-tier-card.mastery {
-            border-top: 5px solid var(--convertpro-purple);
-        }
-
-        .method-tier-card:hover {
-            transform: translateY(-5px);
-        }
-
-        .method-tier-card.implementation:hover {
-            transform: scale(1.05) translateY(-5px);
-        }
-
-        .method-phase-badge {
-            display: inline-block;
-            padding: 5px 15px;
-            border-radius: 15px;
-            font-size: 0.8rem;
-            font-weight: 600;
-            text-transform: uppercase;
-            letter-spacing: 1px;
-            margin-bottom: 15px;
-        }
-
-        .method-tier-card.discovery .method-phase-badge {
-            background: rgba(58, 134, 255, 0.1);
-            color: var(--method-blue);
-        }
-
-        .method-tier-card.implementation .method-phase-badge {
-            background: rgba(245, 87, 108, 0.1);
-            color: var(--convertpro-orange-bright);
-        }
-
-        .method-tier-card.mastery .method-phase-badge {
-            background: rgba(102, 126, 234, 0.1);
-            color: var(--convertpro-purple);
-        }
-
-        .method-tier-icon {
-            width: 80px;
-            height: 80px;
+            right: 20px;
+            width: 20px;
+            height: 20px;
             border-radius: 50%;
+            background: var(--success-green);
+            border: 3px solid white;
+            box-shadow: 0 2px 8px rgba(0,0,0,0.15);
+        }
+
+        .story-header-content {
             display: flex;
             align-items: center;
-            justify-content: center;
-            margin: 0 auto 20px;
-            font-size: 2rem;
-            color: white;
+            margin-bottom: 30px;
         }
 
-        .method-tier-card.discovery .method-tier-icon {
-            background: linear-gradient(135deg, var(--method-blue), var(--method-blue-dark));
+        .story-icon {
+            font-size: 3rem;
+            margin-right: 20px;
+            flex-shrink: 0;
         }
 
-        .method-tier-card.implementation .method-tier-icon {
-            background: linear-gradient(135deg, var(--convertpro-orange-bright), #ff8c42);
-        }
-
-        .method-tier-card.mastery .method-tier-icon {
-            background: linear-gradient(135deg, var(--convertpro-purple), var(--convertpro-purple-dark));
-        }
-
-        .method-tier-title {
+        .story-title {
             font-family: 'Montserrat', sans-serif;
-            font-size: 1.5rem;
+            font-size: 1.8rem;
             font-weight: 700;
-            margin-bottom: 10px;
             color: var(--dark-gray);
+            margin-bottom: 5px;
         }
 
-        .method-tier-subtitle {
-            font-size: 1rem;
-            color: #666;
-            margin-bottom: 20px;
-            font-style: italic;
-        }
-
-        .method-tier-price {
-            font-family: 'Montserrat', sans-serif;
-            font-size: 2.5rem;
-            font-weight: 800;
-            margin-bottom: 20px;
-        }
-
-        .method-tier-card.discovery .method-tier-price {
-            color: var(--method-blue);
-        }
-
-        .method-tier-card.implementation .method-tier-price {
-            color: var(--convertpro-orange-bright);
-        }
-
-        .method-tier-card.mastery .method-tier-price {
-            color: var(--convertpro-purple);
-        }
-
-        .method-tier-description {
-            color: #666;
-            margin-bottom: 30px;
+        .story-content {
             font-size: 1.1rem;
+            line-height: 1.8;
+            color: #4a5568;
         }
 
-        .method-tier-features {
-            list-style: none;
-            margin-bottom: 30px;
+        .story-content p {
+            margin-bottom: 20px;
         }
 
-        .method-tier-features li {
-            padding: 8px 0;
-            color: #666;
-            position: relative;
-            padding-left: 25px;
+        .story-highlight {
+            padding: 20px;
+            border-radius: 10px;
+            margin: 25px 0;
+            font-weight: 600;
         }
 
-        .method-tier-features li::before {
-            content: '✓';
-            position: absolute;
-            left: 0;
-            color: var(--success-green);
-            font-weight: bold;
+        .story-highlight.success {
+            background: linear-gradient(135deg, #f0fff4, #c6f6d5);
+            border-left: 5px solid var(--success-green);
+            color: #22543d;
         }
 
-        .method-tier-cta {
+        .story-highlight.info {
+            background: linear-gradient(135deg, #ebf8ff, #bee3f8);
+            border-left: 5px solid #3182ce;
+            color: #2a4365;
+        }
+
+        .story-cta {
+            margin-top: 30px;
+            text-align: center;
+        }
+
+        .story-button {
+            background: linear-gradient(135deg, var(--success-green), #68d391);
             color: white;
             border: none;
-            padding: 15px 30px;
+            padding: 18px 40px;
             border-radius: 50px;
             font-size: 1.1rem;
             font-weight: 600;
             cursor: pointer;
             transition: all 0.3s ease;
-            width: 100%;
+            box-shadow: 0 8px 25px rgba(72, 187, 120, 0.3);
+            text-transform: uppercase;
+            letter-spacing: 1px;
         }
 
-        .method-tier-card.discovery .method-tier-cta {
-            background: linear-gradient(135deg, var(--method-blue), var(--method-blue-dark));
-        }
-
-        .method-tier-card.implementation .method-tier-cta {
-            background: linear-gradient(135deg, var(--convertpro-orange-bright), #ff8c42);
-        }
-
-        .method-tier-card.mastery .method-tier-cta {
-            background: linear-gradient(135deg, var(--convertpro-purple), var(--convertpro-purple-dark));
-        }
-
-        .method-tier-cta:hover {
-            transform: translateY(-2px);
-            box-shadow: 0 10px 25px rgba(0,0,0,0.2);
+        .story-button:hover {
+            transform: translateY(-3px);
+            box-shadow: 0 12px 35px rgba(72, 187, 120, 0.4);
         }
 
         /* CTA Section */
@@ -536,18 +238,15 @@
 
         .cta-section h2 {
             font-family: 'Montserrat', sans-serif;
-            font-size: 2.8rem;
+            font-size: 2.5rem;
             font-weight: 700;
             margin-bottom: 20px;
         }
 
         .cta-section p {
-            font-size: 1.3rem;
+            font-size: 1.2rem;
             margin-bottom: 40px;
             opacity: 0.9;
-            max-width: 700px;
-            margin-left: auto;
-            margin-right: auto;
         }
 
         .cta-button {
@@ -607,7 +306,7 @@
         .benefit-icon {
             width: 80px;
             height: 80px;
-            background: linear-gradient(135deg, var(--method-blue), var(--method-blue-dark));
+            background: linear-gradient(135deg, var(--convertpro-purple), var(--convertpro-purple-dark));
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -678,7 +377,7 @@
         .session-detail-icon {
             width: 60px;
             height: 60px;
-            background: linear-gradient(135deg, var(--method-blue), var(--method-blue-dark));
+            background: linear-gradient(135deg, var(--convertpro-purple), var(--convertpro-purple-dark));
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -699,26 +398,60 @@
             font-size: 0.9rem;
         }
 
-        /* Calendly Styles */
-        .calendly-container {
+        /* Google Appointments Styles */
+        .booking-container {
             margin: 40px 0;
+            text-align: center;
         }
 
-        .calendly-inline-widget {
+        .google-booking-iframe {
             border-radius: 10px;
             overflow: hidden;
             box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+            min-height: 600px;
+            width: 100%;
+            border: none;
         }
 
-        .calendly-fallback {
-            text-align: center;
-            margin-top: 15px;
+        .booking-fallback {
+            margin-top: 20px;
         }
 
-        .calendly-fallback a {
+        .booking-fallback p {
+            color: #666;
+            font-size: 1rem;
+            margin-bottom: 15px;
+        }
+
+        .booking-fallback a {
             color: var(--convertpro-orange);
-            text-decoration: underline;
+            text-decoration: none;
             font-weight: 600;
+            transition: color 0.3s ease;
+        }
+
+        .booking-fallback a:hover {
+            color: var(--convertpro-orange-bright);
+            text-decoration: underline;
+        }
+
+        .google-booking-fallback-link {
+            display: inline-block;
+            background: linear-gradient(135deg, var(--convertpro-purple), var(--convertpro-purple-dark));
+            color: white;
+            padding: 15px 30px;
+            border-radius: 50px;
+            font-size: 1.1rem;
+            font-weight: 600;
+            text-decoration: none;
+            margin-top: 20px;
+            transition: all 0.3s ease;
+            box-shadow: 0 10px 25px rgba(102, 126, 234, 0.4);
+        }
+
+        .google-booking-fallback-link:hover {
+            transform: translateY(-2px);
+            box-shadow: 0 15px 30px rgba(102, 126, 234, 0.5);
         }
 
         /* Contact Section */
@@ -753,6 +486,16 @@
             font-weight: 500;
         }
 
+        .contact-item a {
+            color: var(--convertpro-orange);
+            text-decoration: none;
+        }
+
+        .contact-item a:hover {
+            color: var(--convertpro-orange-bright);
+            text-decoration: underline;
+        }
+
         /* Testimonials Section */
         .testimonials-section {
             padding: 80px 20px;
@@ -784,7 +527,7 @@
         .testimonial-avatar {
             width: 60px;
             height: 60px;
-            background: linear-gradient(135deg, var(--method-blue), var(--method-blue-dark));
+            background: linear-gradient(135deg, var(--convertpro-purple), var(--convertpro-purple-dark));
             border-radius: 50%;
             display: flex;
             align-items: center;
@@ -817,16 +560,6 @@
             margin-bottom: 15px;
         }
 
-        .testimonial-metric {
-            background: linear-gradient(135deg, var(--method-blue), var(--method-blue-dark));
-            color: white;
-            padding: 10px 20px;
-            border-radius: 25px;
-            font-weight: 600;
-            margin-top: 15px;
-            display: inline-block;
-        }
-
         /* Guarantee Section */
         .guarantee-section {
             padding: 60px 20px;
@@ -853,44 +586,33 @@
         /* Mobile Responsiveness */
         @media (max-width: 768px) {
             .header h1 {
-                font-size: 2.2rem;
+                font-size: 2rem;
             }
 
             .header .subtitle {
-                font-size: 1.2rem;
+                font-size: 1.1rem;
             }
 
-            .problem-header h2 {
-                font-size: 2.2rem;
+            .story-header h2 {
+                font-size: 2rem;
             }
 
-            .solution-header h2 {
-                font-size: 2.2rem;
+            .story-card {
+                padding: 25px;
             }
 
-            .trust-indicators {
+            .story-header-content {
                 flex-direction: column;
-                gap: 15px;
+                text-align: center;
             }
 
-            .problem-stats {
-                grid-template-columns: 1fr;
+            .story-icon {
+                margin-right: 0;
+                margin-bottom: 15px;
             }
 
-            .method-capabilities {
-                grid-template-columns: 1fr;
-            }
-
-            .method-results-grid {
-                grid-template-columns: repeat(2, 1fr);
-            }
-
-            .method-tiers-grid {
-                grid-template-columns: 1fr;
-            }
-
-            .method-tier-card.implementation {
-                transform: none;
+            .story-title {
+                font-size: 1.5rem;
             }
 
             .benefits-grid {
@@ -910,26 +632,26 @@
                 grid-template-columns: 1fr;
             }
 
-            .calendly-inline-widget {
+            .google-booking-iframe {
                 height: 600px !important;
             }
         }
 
         @media (max-width: 480px) {
             .header h1 {
-                font-size: 1.8rem;
+                font-size: 1.7rem;
             }
 
-            .problem-header h2 {
-                font-size: 1.8rem;
+            .story-header h2 {
+                font-size: 1.7rem;
             }
 
-            .solution-header h2 {
-                font-size: 1.8rem;
+            .story-card {
+                padding: 20px;
             }
 
-            .method-results-grid {
-                grid-template-columns: 1fr;
+            .story-title {
+                font-size: 1.3rem;
             }
 
             .session-details {
@@ -946,181 +668,69 @@
     <!-- Header Section -->
     <header class="header">
         <div class="header-content">
-            <div class="company-name">ConvertPro AI Solutions</div>
-            <div class="method-badge">🎯 The ConvertPro AI Method</div>
-            <h1>Discover <span class="highlight">The ConvertPro AI Method</span> That Generates 3X More Qualified Prospects!</h1>
-            <p class="subtitle">Stop using outdated lead generation tactics. Get your FREE ConvertPro AI Method Discovery Session and learn the proven system that converts everything into revenue.</p>
-            
-            <div class="trust-indicators">
-                <div class="trust-indicator">
-                    <span>🏆</span>
-                    <span>270+ Businesses Using Our Method</span>
-                </div>
-                <div class="trust-indicator">
-                    <span>💰</span>
-                    <span>$50M+ Generated by The Method</span>
-                </div>
-                <div class="trust-indicator">
-                    <span>⚡</span>
-                    <span>30-Day Method Guarantee</span>
-                </div>
-            </div>
+            <div class="company-name">ConvertPro Marketing Solutions</div>
+            <h1>🚀 Book Your <span class="highlight">FREE</span> Funnel Strategy Session!</h1>
+            <p class="subtitle">Get a Personalized Plan to Turn Your Website Into a CASH MACHINE</p>
+            <button onclick="scrollToBooking()" class="cta-button">Book Your FREE Session Now!</button>
         </div>
     </header>
 
-    <!-- Problem Agitation Section -->
-    <section class="problem-section">
+    <!-- Story Section -->
+    <section class="story-section">
         <div class="container">
-            <div class="problem-header">
-                <h2>Why Most Lead Generation Methods Fail</h2>
-                <p>While you're struggling with outdated tactics, businesses using The ConvertPro AI Method are capturing qualified prospects automatically and converting them at unprecedented rates.</p>
+            <div class="story-header">
+                <h2>
+                    <span class="emoji">🔥</span>Why We're OBSESSED With Fixing Funnels
+                </h2>
+                <p>This TRUE story will show you exactly why every minute you wait costs you money...</p>
             </div>
 
-            <div class="problem-stats">
-                <div class="problem-stat">
-                    <div class="problem-stat-number">80%</div>
-                    <div class="problem-stat-text">of businesses fail without a proven method</div>
-                </div>
+            <!-- Gary V Story Card -->
+            <div class="story-card">
+                <div class="story-badge"></div>
                 
-                <div class="problem-stat">
-                    <div class="problem-stat-number">61%</div>
-                    <div class="problem-stat-text">struggle because they lack a systematic approach</div>
-                </div>
-                
-                <div class="problem-stat">
-                    <div class="problem-stat-number">88%</div>
-                    <div class="problem-stat-text">of successful businesses use AI-powered methods</div>
-                </div>
-            </div>
-
-            <div class="reality-check">
-                <h3>⚠️ The Method Reality</h3>
-                <p>Every day you operate without The ConvertPro AI Method is another day of missed revenue. Our method doesn't just generate leads – it creates a systematic, repeatable process that converts everything into qualified prospects and paying customers.</p>
-            </div>
-        </div>
-    </section>
-
-    <!-- Method Solution Section -->
-    <section class="solution-section">
-        <div class="container">
-            <div class="solution-header">
-                <h2>Introducing <span class="method-highlight">The ConvertPro AI Method</span></h2>
-                <p>The only proven system that combines AI technology with conversion science to create a method that works for any business, in any industry, every single time.</p>
-            </div>
-
-            <div class="method-capabilities">
-                <div class="method-capability">
-                    <div class="method-capability-icon">🎯</div>
-                    <h3>Method-Driven Targeting</h3>
-                    <p>Our systematic approach identifies your perfect prospects using 75+ data sources and proven conversion principles built into The Method.</p>
-                </div>
-                
-                <div class="method-capability">
-                    <div class="method-capability-icon">🤖</div>
-                    <h3>Automated Method Execution</h3>
-                    <p>The ConvertPro AI Method runs 24/7, automatically executing each step of the proven process while you focus on growing your business.</p>
-                </div>
-                
-                <div class="method-capability">
-                    <div class="method-capability-icon">📊</div>
-                    <h3>Method Performance Tracking</h3>
-                    <p>Every element of The Method is measured and optimized using AI, ensuring your results improve continuously and predictably.</p>
-                </div>
-                
-                <div class="method-capability">
-                    <div class="method-capability-icon">⚡</div>
-                    <h3>Method Optimization Engine</h3>
-                    <p>Unlike static systems, The ConvertPro AI Method evolves and improves automatically, getting better results over time without manual intervention.</p>
-                </div>
-            </div>
-
-            <div class="method-results">
-                <h3>🚀 What The ConvertPro AI Method Delivers</h3>
-                <div class="method-results-grid">
-                    <div class="method-result-item">
-                        <div class="method-result-number">3X</div>
-                        <div class="method-result-text">More Qualified Prospects</div>
-                    </div>
-                    <div class="method-result-item">
-                        <div class="method-result-number">50%</div>
-                        <div class="method-result-text">Lower Cost Per Lead</div>
-                    </div>
-                    <div class="method-result-item">
-                        <div class="method-result-number">47%</div>
-                        <div class="method-result-text">Higher Conversion Rate</div>
-                    </div>
-                    <div class="method-result-item">
-                        <div class="method-result-number">24/7</div>
-                        <div class="method-result-text">Automated Execution</div>
+                <div class="story-header-content">
+                    <div class="story-icon">🔥</div>
+                    <div>
+                        <h3 class="story-title">YOUR FUNNEL IS YOUR EVERYTHING!</h3>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <!-- Method Tiers Section -->
-    <section class="method-tiers-section">
-        <div class="container">
-            <div class="method-tiers-header">
-                <h2>The ConvertPro AI Method Programs</h2>
-                <div class="tagline">Discover. Implement. Master. The Method That Converts Everything.</div>
-                <p>Choose your path to method mastery – from discovery to complete implementation</p>
-            </div>
-
-            <div class="method-tiers-grid">
-                <div class="method-tier-card discovery">
-                    <div class="method-phase-badge">Method Discovery</div>
-                    <div class="method-tier-icon">🔍</div>
-                    <h3 class="method-tier-title">Method Discovery</h3>
-                    <p class="method-tier-subtitle">"Discover Your Custom AI Method Blueprint"</p>
-                    <div class="method-tier-price">$1,497</div>
-                    <p class="method-tier-description">Comprehensive 72-hour analysis to discover your custom ConvertPro AI Method</p>
-                    <ul class="method-tier-features">
-                        <li>Complete ConvertPro AI Method analysis</li>
-                        <li>Custom method blueprint creation</li>
-                        <li>30-page method implementation plan</li>
-                        <li>Method optimization roadmap</li>
-                        <li>AI tool integration strategy</li>
-                        <li>60-minute method presentation</li>
-                        <li>30-day method support</li>
-                    </ul>
-                    <button onclick="scrollToBooking()" class="method-tier-cta">Discover My Method</button>
+                
+                <div class="story-content">
+                    <p><strong>LISTEN UP!</strong></p>
+                    
+                    <p>IF YOUR FUNNEL SUCKS, YOUR BUSINESS SUCKS!</p>
+                    
+                    <p>I don't care how amazing your product is. I don't care how passionate you are. I don't care how many hours you work.</p>
+                    
+                    <div class="story-highlight success">
+                        <strong>🏆 WINNERS OBSESS OVER THEIR FUNNELS!</strong><br><br>
+                        They test EVERYTHING. They optimize EVERYTHING. They measure EVERYTHING.
+                    </div>
+                    
+                    <p>You know what separates the $10K entrepreneurs from the $10M entrepreneurs?</p>
+                    
+                    <p><strong>FUNNELS!</strong></p>
+                    
+                    <p>Your funnel is your sales team that never sleeps, never takes a day off, and never asks for a raise!</p>
+                    
+                    <p>It's working for you 24/7/365, turning strangers into customers, customers into raving fans, and raving fans into walking billboards for your business!</p>
+                    
+                    <div class="story-highlight info">
+                        <strong>THE GARY V TRUTH BOMB:</strong> Every second you wait to optimize your funnel is money walking out the door. Every visitor who doesn't convert is a missed opportunity that's NEVER coming back.
+                    </div>
+                    
+                    <p><strong>So what are you waiting for?</strong></p>
+                    
+                    <p>Stop making excuses. Stop procrastinating. Stop leaving money on the table!</p>
+                    
+                    <p>Your funnel is your future. Treat it that way!</p>
                 </div>
-
-                <div class="method-tier-card implementation">
-                    <div class="method-phase-badge">Method Implementation</div>
-                    <div class="method-tier-icon">⚙️</div>
-                    <h3 class="method-tier-title">Method Implementation</h3>
-                    <p class="method-tier-subtitle">"Implement The Complete ConvertPro AI Method"</p>
-                    <div class="method-tier-price">$4,997</div>
-                    <p class="method-tier-description">Complete ConvertPro AI Method build and implementation with performance guarantee</p>
-                    <ul class="method-tier-features">
-                        <li>Complete ConvertPro AI Method build</li>
-                        <li>Custom AI system implementation</li>
-                        <li>Automated method execution setup</li>
-                        <li>Real-time method dashboard</li>
-                        <li>Complete method training</li>
-                        <li>60-day method performance guarantee</li>
-                    </ul>
-                    <button onclick="scrollToBooking()" class="method-tier-cta">Implement My Method</button>
-                </div>
-
-                <div class="method-tier-card mastery">
-                    <div class="method-phase-badge">Method Mastery</div>
-                    <div class="method-tier-icon">🚀</div>
-                    <h3 class="method-tier-title">Method Mastery</h3>
-                    <p class="method-tier-subtitle">"Master The Method That Converts Everything"</p>
-                    <div class="method-tier-price">$2,997<span style="font-size: 1rem;">/mo</span></div>
-                    <p class="method-tier-description">Ongoing ConvertPro AI Method optimization and mastery program</p>
-                    <ul class="method-tier-features">
-                        <li>Continuous method optimization</li>
-                        <li>Monthly method enhancement sessions</li>
-                        <li>New method feature integration</li>
-                        <li>Method performance analysis</li>
-                        <li>Priority method support</li>
-                        <li>Quarterly method advancement</li>
-                    </ul>
-                    <button onclick="scrollToBooking()" class="method-tier-cta">Master My Method</button>
+                
+                <div class="story-cta">
+                    <button onclick="scrollToBooking()" class="story-button">
+                        💪 LET'S OPTIMIZE YOUR FUNNEL - BOOK NOW!
+                    </button>
                 </div>
             </div>
         </div>
@@ -1129,10 +739,10 @@
     <!-- CTA Section -->
     <section class="cta-section">
         <div class="container">
-            <h2>🚀 Ready to Discover Your Method?</h2>
-            <p>Don't let another day pass without The ConvertPro AI Method. The businesses implementing our method today will dominate their markets tomorrow.</p>
+            <h2>🚀 Ready to Write YOUR Success Story?</h2>
+            <p>Don't let your business become another cautionary tale. Book your FREE strategy session and let's turn your funnel into a money-making machine!</p>
             <button onclick="scrollToBooking()" class="cta-button">
-                🎯 DISCOVER THE CONVERTPRO AI METHOD!
+                📞 BOOK MY FUNNEL FIX SESSION NOW!
             </button>
         </div>
     </section>
@@ -1140,26 +750,26 @@
     <!-- Benefits Section -->
     <section class="benefits-section">
         <div class="container">
-            <h2>What You'll Discover On This Call</h2>
-            <p class="subtitle">This isn't just another "discovery call" - it's your first step toward method mastery</p>
+            <h2>What You'll Get On This Call</h2>
+            <p class="subtitle">This isn't just another "discovery call" - it's a complete funnel transformation session</p>
             
             <div class="benefits-grid">
                 <div class="benefit-card">
                     <div class="benefit-icon">🔍</div>
-                    <h3>Method Discovery Assessment</h3>
-                    <p>Live analysis to identify how The ConvertPro AI Method can be customized for your specific business and market</p>
+                    <h3>Complete Funnel Analysis</h3>
+                    <p>Live screen-share review of your current funnel to identify what's killing your conversions and costing you sales</p>
                 </div>
                 
                 <div class="benefit-card">
-                    <div class="benefit-icon">🎯</div>
-                    <h3>Custom Method Blueprint</h3>
-                    <p>Personalized ConvertPro AI Method roadmap based on your business goals, audience, and conversion objectives</p>
+                    <div class="benefit-icon">💡</div>
+                    <h3>Custom Strategy Blueprint</h3>
+                    <p>Personalized recommendations based on your specific business, audience, and conversion goals</p>
                 </div>
                 
                 <div class="benefit-card">
                     <div class="benefit-icon">🚀</div>
-                    <h3>30-Day Method Action Plan</h3>
-                    <p>Step-by-step guide with 3-5 method implementation strategies you can start using immediately</p>
+                    <h3>90-Day Action Plan</h3>
+                    <p>Step-by-step implementation roadmap to boost your conversion rates and maximize revenue</p>
                 </div>
             </div>
         </div>
@@ -1170,15 +780,15 @@
         <div class="container">
             <div class="booking-container">
                 <div class="booking-header">
-                    <h3>📅 Book Your FREE ConvertPro AI Method Discovery Session</h3>
-                    <p>Choose a time that works best for you - let's discover your method together</p>
+                    <h3>📅 Book Your FREE Strategy Session</h3>
+                    <p>Choose a time that works best for you - we'll handle the rest</p>
                 </div>
                 
                 <div class="session-details">
                     <div class="session-detail">
                         <div class="session-detail-icon">⏰</div>
-                        <h4>45-60 Minutes</h4>
-                        <p>Deep method discovery</p>
+                        <h4>30-45 Minutes</h4>
+                        <p>Deep-dive session</p>
                     </div>
                     
                     <div class="session-detail">
@@ -1188,52 +798,51 @@
                     </div>
                     
                     <div class="session-detail">
-                        <div class="session-detail-icon">🎯</div>
-                        <h4>Method Insights</h4>
-                        <p>Custom analysis</p>
+                        <div class="session-detail-icon">🚫</div>
+                        <h4>No Sales Pitch</h4>
+                        <p>Pure value only</p>
                     </div>
                     
                     <div class="session-detail">
                         <div class="session-detail-icon">💻</div>
-                        <h4>Zoom Call</h4>
+                        <h4>Google Meet Call</h4>
                         <p>Screen sharing</p>
                     </div>
                 </div>
 
-<div class="calendly-container">
-    <div class="booking-header">
-        <h3 style="color: var(--dark-gray); margin-bottom: 10px;">Book Your FREE Strategy Session</h3>
-        <p style="color: #666; margin-bottom: 20px;">Select a time that works best for you. Automatically syncs with Google Calendar!</p>
-    </div>
-    
-    <!-- Calendly inline widget begin -->
-    <div class="calendly-inline-widget" 
-         data-url="https://calendly.com/shomari-hines86/chat-with-shomari?hide_gdpr_banner=1&primary_color=667eea" 
-         style="min-width:320px;height:700px;border-radius:10px;overflow:hidden;box-shadow:0 10px 30px rgba(0,0,0,0.1);">
-    </div>
-    <script type="text/javascript" src="https://assets.calendly.com/assets/external/widget.js" async></script>
-    <!-- Calendly inline widget end -->
-    
-    <div class="calendly-fallback">
-        <p>Prefer to book directly or having trouble with the calendar?</p>
-        <a href="https://calendly.com/shomari-hines86/chat-with-shomari" 
-           target="_blank" 
-           class="calendly-direct-link">
-           Book Directly on Calendly
-        </a>
-    </div>
-</div>
+                <div class="booking-container">
+                    <div class="booking-header">
+                        <h3 style="color: var(--dark-gray); margin-bottom: 10px;">Book Your FREE Strategy Session</h3>
+                        <p style="color: #666; margin-bottom: 20px;">Select a time that works best for you. Automatically syncs with Google Calendar!</p>
+                    </div>
+                    
+                    <!-- Google Calendar Appointment Scheduling begin -->
+                    <iframe src="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2oB0Cl_bJdbFuZ5wAIZ7ZlLIizr2MELG2BwrEL7rFZ60lCwuvK3ULtg8qe7bineJaxy1qU37BS?gv=true" 
+                            class="google-booking-iframe" 
+                            style="min-width:320px;height:700px;">
+                    </iframe>
+                    <!-- end Google Calendar Appointment Scheduling -->
+                    
+                    <div class="booking-fallback">
+                        <p>Having trouble with the booking calendar? Click below to schedule directly.</p>
+                        <a href="https://calendar.google.com/calendar/appointments/schedules/AcZssZ2oB0Cl_bJdbFuZ5wAIZ7ZlLIizr2MELG2BwrEL7rFZ60lCwuvK3ULtg8qe7bineJaxy1qU37BS?gv=true" 
+                           target="_blank" 
+                           class="google-booking-fallback-link">
+                           Book Directly on Google Calendar
+                        </a>
+                    </div>
+                </div>
 
                 <div class="contact-section">
-                    <h4>Prefer a Different Way to Connect?</h4>
+                    <h4>Need Help or Prefer Another Way to Connect?</h4>
                     <div class="contact-info">
                         <div class="contact-item">
                             <span>📧</span>
-                            <span><strong>my.convertpro@gmail.com</strong></span>
+                            <span><a href="mailto:my.convertpro@gmail.com">my.convertpro@gmail.com</a></span>
                         </div>
                         <div class="contact-item">
                             <span>📞</span>
-                            <span><strong>(631) 388-1917</strong></span>
+                            <span><a href="tel:+16313881917">(631) 388-1917</a></span>
                         </div>
                     </div>
                 </div>
@@ -1244,34 +853,31 @@
     <!-- Testimonials Section -->
     <section class="testimonials-section">
         <div class="container">
-            <h2>ConvertPro AI Method Success Stories</h2>
+            <h2>What Our Clients Say</h2>
             
             <div class="testimonials-grid">
                 <div class="testimonial-card">
                     <div class="testimonial-avatar">S</div>
                     <div class="testimonial-stars">★★★★★</div>
-                    <p class="testimonial-text">"The ConvertPro AI Method identified prospects I never would have found manually. Once we implemented the method, my conversion rate went from 2% to 12% in just 3 weeks!"</p>
+                    <p class="testimonial-text">"Increased my conversion rate from 2% to 8% in just 2 weeks. The insights were game-changing!"</p>
                     <div class="testimonial-author">Sarah Johnson</div>
                     <div class="testimonial-role">Online Coach</div>
-                    <div class="testimonial-metric">Method Success Story</div>
                 </div>
                 
                 <div class="testimonial-card">
                     <div class="testimonial-avatar">M</div>
                     <div class="testimonial-stars">★★★★★</div>
-                    <p class="testimonial-text">"The ConvertPro AI Method works 24/7. I wake up every morning to a pipeline full of qualified prospects. The method generated 400% revenue increase in the first month!"</p>
+                    <p class="testimonial-text">"Finally found the missing pieces in my funnel. Revenue increased 300% in the first month!"</p>
                     <div class="testimonial-author">Mike Chen</div>
                     <div class="testimonial-role">Course Creator</div>
-                    <div class="testimonial-metric">Method Implementation</div>
                 </div>
                 
                 <div class="testimonial-card">
                     <div class="testimonial-avatar">L</div>
                     <div class="testimonial-stars">★★★★★</div>
-                    <p class="testimonial-text">"The ConvertPro AI Method eliminated all the guesswork. Every lead is pre-qualified and ready to buy. It's like having a crystal ball for sales!"</p>
+                    <p class="testimonial-text">"The action plan was so clear and actionable. Saw results within days of implementing the changes."</p>
                     <div class="testimonial-author">Lisa Rodriguez</div>
                     <div class="testimonial-role">Local Business</div>
-                    <div class="testimonial-metric">Method Mastery</div>
                 </div>
             </div>
         </div>
@@ -1280,8 +886,8 @@
     <!-- Guarantee Section -->
     <section class="guarantee-section">
         <div class="container">
-            <h3>Our ConvertPro AI Method Guarantee</h3>
-            <p>If The ConvertPro AI Method doesn't generate at least 3X more qualified leads within 60 days, we'll refund your entire investment and let you keep everything we've built. That's how confident we are in the power of our proven method.</p>
+            <h3>Our 100% Value Guarantee</h3>
+            <p>If you don't walk away from our call with at least 3 actionable strategies to improve your funnel, we'll personally refund your time by working with you until you do.</p>
         </div>
     </section>
 
@@ -1292,18 +898,18 @@
             });
         }
 
-        // Mobile responsiveness for Calendly
-        function adjustCalendlyHeight() {
-            const calendlyWidget = document.querySelector('.calendly-inline-widget');
-            if (calendlyWidget && window.innerWidth <= 768) {
-                calendlyWidget.style.height = '600px';
-            } else if (calendlyWidget) {
-                calendlyWidget.style.height = '700px';
+        // Mobile responsiveness for Google Appointments
+        function adjustBookingHeight() {
+            const bookingIframe = document.querySelector('.google-booking-iframe');
+            if (bookingIframe && window.innerWidth <= 768) {
+                bookingIframe.style.height = '600px';
+            } else if (bookingIframe) {
+                bookingIframe.style.height = '700px';
             }
         }
 
-        window.addEventListener('resize', adjustCalendlyHeight);
-        window.addEventListener('load', adjustCalendlyHeight);
+        window.addEventListener('resize', adjustBookingHeight);
+        window.addEventListener('load', adjustBookingHeight);
     </script>
 </body>
 </html>
